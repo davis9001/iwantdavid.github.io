@@ -23394,14 +23394,24 @@ $(document).foundation();
 
 $(document).ready(function() {
   // Animate hero rocket on page load:
-  $('.hero .fa-rocket').css({
-    'display': 'block',
-    'position': 'absolute',
-    'top': '23rem',
-    'right': '32rem',
-    '-webkit-transform': 'rotate(-20deg)'
+
+  animateRocket();
+
+  // Animate rocket on click:
+  $('.hero .fa-rocket').click(function() {
+    animateRocket();
   });
-  TweenMax.to(".hero .fa-rocket", 1, {top: $('.hero').height()/2-100, right: $('.hero').width()/8, rotation: 0, transformOrigin:"250px 220px", ease: Power1.easeIn});
+
+  function animateRocket() {
+    $('.hero .fa-rocket').css({
+      'display': 'block',
+      'position': 'absolute',
+      'top': '23rem',
+      'right': '32rem',
+      '-webkit-transform': 'rotate(-20deg)'
+    });
+    TweenMax.to(".hero .fa-rocket", 1, {top: $('.hero').height()/2-100, right: $('.hero').width()/8, rotation: 0, transformOrigin:"250px 220px", ease: Power1.easeIn});
+  }
 
   // Bubble animation on link hover:
   $("a").hover(function() {
