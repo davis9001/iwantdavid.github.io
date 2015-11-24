@@ -8508,3 +8508,13 @@ button:hover, button:focus,
   font-size: 111pt !important;
   display: none;
 }
+
+@media print {
+  a:after {
+    content: "" !important;
+  }
+
+  button, .button {
+    display: none;
+  }
+}
