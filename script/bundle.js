@@ -23406,11 +23406,18 @@ $(document).ready(function() {
     $('.hero .fa-rocket').css({
       'display': 'block',
       'position': 'absolute',
-      'top': '23rem',
-      'right': '32rem',
-      '-webkit-transform': 'rotate(-20deg)'
+      'top': Math.random()*23+5 + 'rem',
+      'right': Math.random()*32+5 + 'rem',
+      '-webkit-transform': 'rotate(95deg)',
+      'opacity': 0
     });
-    TweenMax.to(".hero .fa-rocket", 1, {top: $('.hero').height()/2-100, right: $('.hero').width()/8, rotation: 0, transformOrigin:"250px 220px", ease: Power1.easeIn});
+    TweenMax.set('.hero .fa-rocket', {
+      rotation: Math.random()*90,
+      top: Math.random()*23+15 + 'rem',
+      right: Math.random()*32+15 + 'rem'
+    });
+    TweenMax.to(".hero .fa-rocket", 1, {opacity: 1, top: $('.hero').height()/2-100, right: $('.hero').width()/8, ease: Power3.easeIn}, "launch");
+    TweenMax.to(".hero .fa-rocket", 1, {rotation: -45,  ease: SteppedEase.config(12), y: 0}, "launch");
   }
 
   // Bubble animation on link hover:
