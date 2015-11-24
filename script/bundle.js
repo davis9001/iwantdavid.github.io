@@ -23395,6 +23395,7 @@ $(document).foundation();
 $(document).ready(function() {
   // Animate hero rocket on page load:
   $('.hero .fa-rocket').css({
+    'display': 'block',
     'position': 'absolute',
     'top': '23rem',
     'right': '32rem',

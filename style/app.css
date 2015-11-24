@@ -8506,4 +8506,5 @@ button:hover, button:focus,
 .hero .fa-rocket {
   color: white;
   font-size: 111pt !important;
+  display: none;
 }
