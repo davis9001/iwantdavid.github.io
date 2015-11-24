@@ -8517,4 +8517,12 @@ button:hover, button:focus,
   button, .button {
     display: none;
   }
+
+  .hero .fa-rocket {
+    font-size: 77pt !important;
+    float: right !important;
+    position: relative !important;
+    top: 0 !important;
+    right: 0 !important;
+  }
 }
