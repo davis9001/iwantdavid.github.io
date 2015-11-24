@@ -8502,3 +8502,8 @@ button:hover, button:focus,
   height: 6rem;
   left: 3rem;
 }
+
+.hero .fa-rocket {
+  color: white;
+  font-size: 111pt !important;
+}

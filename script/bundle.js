@@ -23393,6 +23393,16 @@ var gsap = require('gsap');
 $(document).foundation();
 
 $(document).ready(function() {
+  // Animate hero rocket on page load:
+  $('.hero .fa-rocket').css({
+    'position': 'absolute',
+    'top': '23rem',
+    'right': '32rem',
+    '-webkit-transform': 'rotate(-20deg)'
+  });
+  TweenMax.to(".hero .fa-rocket", 1, {top: '5rem', right: '5rem', rotation: 0});
+
+  // Bubble animation on link hover:
   $("a").hover(function() {
     $(this).css({
       'position': 'relative'
@@ -23433,6 +23443,7 @@ $(document).ready(function() {
       });
     }
   );
+
 });
 
 },{"foundation":"/Users/davidmonaghan/Workbench/iwantdavid.github.io-builder/node_modules/foundation-sites/js/foundation.js","gsap":"/Users/davidmonaghan/Workbench/iwantdavid.github.io-builder/node_modules/gsap/src/uncompressed/TweenMax.js","jquery":"/Users/davidmonaghan/Workbench/iwantdavid.github.io-builder/node_modules/jquery/dist/jquery.js"}]},{},["/Users/davidmonaghan/Workbench/iwantdavid.github.io-builder/src/script/main"]);
