@@ -1,5 +1,4 @@
 @charset "UTF-8";
-@import url(https://fonts.googleapis.com/css?family=Amatic+SC|Cabin+Sketch);
 meta.foundation-version {
   font-family: "/5.5.3/";
 }
@@ -8393,46 +8392,8 @@ footer p, footer a {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-/* Added by David */
-body, ul, ol, dl {
-  font-family: "Cabin Sketch", cursive !important;
-}
-
-a {
-  color: #248F99;
-}
-
-button, .button, button:hover, .button:hover {
-  font-family: "Cabin Sketch", cursive !important;
-  font-weight: bold !important;
-}
-
-h1 {
-  font-family: "Amatic SC", cursive;
-}
-
-h2, h3, h4, h5, h6 {
-  font-family: "Cabin Sketch", cursive;
-  line-height: 105%;
-}
-
 .hero {
-  background-image: none;
-  background-color: #248F99 !important;
-}
-
-.hero-content {
-  background-color: #CC6DA3;
-}
-
-.about-content {
-  border-radius: 5pt 5pt 0 5pt;
-  background-color: white;
-  background-color: rgba(255, 255, 255, 0.9);
-}
-
-.hero-content:nth-of-type(2n) {
-  background-color: #6DC4CC;
+  background-image: url("/image/header.jpg");
 }
 
 .dark {
@@ -8449,15 +8410,13 @@ code {
   quotes: "“" "”" "‘" "’";
 }
 
-button:hover, button:focus,
-.button:hover, .button:focus {
-  background-color: #A2FFD3;
+button:hover, button:focus, .button:hover, .button:focus {
+  background-color: #73D0FF;
 }
 
 .hero ul button:hover, .hero ul button:focus, .hero ul .button:hover, .hero ul .button:focus {
   background-color: #000;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #A2FFD3;
+  color: green;
 }
 
 .hero .navigation {
@@ -8472,57 +8431,4 @@ button:hover, button:focus,
 }
 .hero-content h2 {
   font-size: 3rem;
-}
-
-.animated-bubble1 circle,
-.animated-bubble2 circle,
-.animated-bubble3 circle {
-  fill: #CC6DA3;
-  stroke: #6DC4CC;
-  stroke-width: 3;
-}
-
-.animated-bubble1 circle {
-  fill: #6DC4CC;
-  width: 14rem;
-  height: 3rem;
-  left: 1rem;
-}
-
-.animated-bubble2 circle {
-  fill: #248F99;
-  width: 23rem;
-  height: 2rem;
-  left: 2rem;
-}
-
-.animated-bubble3 circle {
-  fill: #FFE2E4;
-  width: 2rem;
-  height: 6rem;
-  left: 3rem;
-}
-
-.hero .fa-rocket {
-  color: white;
-  font-size: 111pt !important;
-  display: none;
-}
-
-@media print {
-  a:after {
-    content: "" !important;
-  }
-
-  button, .button {
-    display: none;
-  }
-
-  .hero .fa-rocket {
-    font-size: 77pt !important;
-    float: right !important;
-    position: relative !important;
-    top: 0 !important;
-    right: 0 !important;
-  }
 }
